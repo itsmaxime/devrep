@@ -13,6 +13,7 @@ Fichiers/dossiers nécessaires :
 
 Avoir au préalable :  
 -> Node.js d’installé pour avoir la commande npm  
+https://nodejs.org/en/download/  
 -> commande create-react-app avec "npm install -g create-react-app"  
 
 Créer un projet react  
