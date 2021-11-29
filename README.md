@@ -48,7 +48,7 @@ Fichiers/dossiers nécessaires :
 Avoir au préalable :  
 -> Docker installé  
 
-Créer un dossier docker_db et y placer le fichier docker-compose.yml  
+Récupérer le dossier docker_db   
     $ cd docker_db  
     $ docker-compose up  
 
