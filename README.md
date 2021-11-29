@@ -33,11 +33,15 @@ On peut maintenant démarrer, après les commandes l'application doit s'ouvrir d
 Il doit normalement manquer des dépendances, il faut donc les installer  
     $ npm i --save @fortawesome/free-brands-svg-icons
 
-Le front en react devrait être fonctionnel 
+Recharger la page, le front en react devrait être fonctionnel 
 
 ===========================================================
 
 POUR LA PARTIE BASE DE DONNEES :  
+
+DEUX METHODES POSSIBLES, lire les deux avant d'en appliquer une
+
+METHODE 1 : Avec Docker
 
 Fichiers/dossiers nécessaires :  
 -> docker-compose.yml  
@@ -65,30 +69,41 @@ Cliquer sur Importer
 
 Maintenant la base de données est prête pour l'application  
 
-===========================================================
-
-POUR PAR PARTIE BACKEND :  
+METHODE 2 : MySQL et MySQL Workbench
 
 Fichiers/dossiers nécessaires :  
--> devrepBanque.war  
+    -> Compte.sql  
 
-Avoir au préalable (déjà mis en place dans la partie base de données) :  
--> Docker  
--> Tomcat  
+Avoir au préalable :  
+    -> MySQL  
+    -> MySQL Workbench  
 
-Tout a été fait à l'étape précedente, Tomcat a été lancé en même temps que le
-la base de données dans un container Docker  
+Importer Compte.sql dans une base de données nommée devrep_banque
 
-Le fichier devrepBanque.war a été directement intégré dans Tomcat  
+===========================================================
 
-Tomcat est accessible à l'adresse localhost:8080, pour accéder à Manage App :  
-    utilisateur  : admin  
-    mot de passe : admin  
+POUR LA PARTIE BACKEND :  
 
-Le projet est maintenant complètement fonctionnel :D  
+
+Des modifications devront probablement être apportées dans le fichier "db.properties" 
+selon la configuration de votre sgbd  
+
+
+Fichiers/dossiers nécessaires :  
+-> devrep_banque_backend  
+
+Avoir au préalable :  
+-> Eclipse JEE 2020-03  
+-> Tomcat 9.x 
+
+Récupérer le projet devrep_banque_backend et l'ouvrir dans Eclipse
+
+Placer le projet dans le serveur web Tomcat intégré à Eclipse
+
+Démarrer le serveur web Tomcat
+
+Le projet entier devrait maintenant fonctionner  
 
 ===========================================================
 
 Les logs des transactions sont visibles depuis le terminal qui a lancé le container Docker  
-
-===========================================================
