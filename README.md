@@ -10,8 +10,7 @@ Fichiers/dossiers nécessaires :
 -> devrep_banque
 
 Avoir au préalable :  
--> Node.js d’installé pour avoir la commande npm  
-https://nodejs.org/en/download/  
+-> Node.js d’installé pour avoir la commande npm  (https://nodejs.org/en/download/)  
 -> commande `create-react-app` avec `npm install -g create-react-app`  
 
 Créer un projet react  
@@ -29,6 +28,7 @@ On peut maintenant démarrer, après les commandes l'application doit s'ouvrir d
     `npm start`  
 
 Il doit normalement manquer des dépendances, il faut donc les installer  
+    `cd devrep_app`  
     `npm i --save @fortawesome/free-brands-svg-icons`
 
 Recharger la page, le front en react devrait être fonctionnel 
@@ -46,7 +46,7 @@ Fichiers/dossiers nécessaires :
 -> Compte.sql  
 
 Avoir au préalable :  
--> Docker installé  
+-> Docker installé et __démarré__  
 
 Récupérer le dossier docker_db   
     `cd docker_db`  
