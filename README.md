@@ -83,8 +83,7 @@ Importer Compte.sql dans une base de données nommée devrep_banque
 __POUR LA PARTIE BACKEND :__  
 
 
-Des modifications devront probablement être apportées dans le fichier "db.properties" 
-selon la configuration de votre sgbd  
+_Optionnel : des modifications devront probablement être apportées dans le fichier "db.properties" selon la configuration de votre sgbd_  
 
 
 Fichiers/dossiers nécessaires :  
