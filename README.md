@@ -12,24 +12,24 @@ Fichiers/dossiers nécessaires :
 Avoir au préalable :  
 -> Node.js d’installé pour avoir la commande npm  
 https://nodejs.org/en/download/  
--> commande create-react-app avec "npm install -g create-react-app"  
+-> commande `create-react-app` avec `npm install -g create-react-app`  
 
 Créer un projet react  
-    $ create-react-app devrep_app  
+    `create-react-app devrep_app`  
 
 Se placer dans le dossier créé  
-    $ cd devrep_app
+    `cd devrep_app`
 
 Recupérer les fichiers depuis Github  
     - Remplacer à l'identique les fichiers/dossiers du projet devrep_app crée juste avant
       par ceux dans le dossier devrep_banque sur Github
 
 On peut maintenant démarrer, après les commandes l'application doit s'ouvrir dans un navigateur à l'adresse localhost:3000  
-    $ cd devrep_app  
-    $ npm start  
+    `cd devrep_app`  
+    `npm start`  
 
 Il doit normalement manquer des dépendances, il faut donc les installer  
-    $ npm i --save @fortawesome/free-brands-svg-icons
+    `npm i --save @fortawesome/free-brands-svg-icons`
 
 Recharger la page, le front en react devrait être fonctionnel 
 
@@ -49,8 +49,8 @@ Avoir au préalable :
 -> Docker installé  
 
 Récupérer le dossier docker_db   
-    $ cd docker_db  
-    $ docker-compose up  
+    `cd docker_db`  
+    `docker-compose up` 
 
 PhpMyAdmin sera maintenant accessible à l'adresse localhost:3312  
     utilisateur  : root  
