@@ -1,12 +1,10 @@
-# DEVREP_BANQUE
+## DEVREP_BANQUE
 Mini-projet d'application
 
 
-INSTALLATION
+# INSTALLATION
 
-===========================================================
-
-POUR LA PARTIE FRONTEND :
+__POUR LA PARTIE FRONTEND :__
 
 Fichiers/dossiers nécessaires :  
 -> devrep_banque
@@ -37,11 +35,11 @@ Recharger la page, le front en react devrait être fonctionnel
 
 ===========================================================
 
-POUR LA PARTIE BASE DE DONNEES :  
+__POUR LA PARTIE BASE DE DONNEES :__
 
-DEUX METHODES POSSIBLES, lire les deux avant d'en appliquer une
+_DEUX METHODES POSSIBLES, lire les deux avant d'en appliquer une_
 
-METHODE 1 : Avec Docker
+__METHODE 1 : Avec Docker__
 
 Fichiers/dossiers nécessaires :  
 -> docker-compose.yml  
@@ -69,7 +67,7 @@ Cliquer sur Importer
 
 Maintenant la base de données est prête pour l'application  
 
-METHODE 2 : MySQL et MySQL Workbench
+__METHODE 2 : MySQL et MySQL Workbench__
 
 Fichiers/dossiers nécessaires :  
     -> Compte.sql  
@@ -82,7 +80,7 @@ Importer Compte.sql dans une base de données nommée devrep_banque
 
 ===========================================================
 
-POUR LA PARTIE BACKEND :  
+__POUR LA PARTIE BACKEND :__  
 
 
 Des modifications devront probablement être apportées dans le fichier "db.properties" 
@@ -104,6 +102,6 @@ Démarrer le serveur web Tomcat
 
 Le projet entier devrait maintenant fonctionner  
 
-===========================================================
+# UTILISATION
 
-Les logs des transactions sont visibles depuis le terminal qui a lancé le container Docker  
+En cours...
