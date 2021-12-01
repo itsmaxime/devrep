@@ -6,34 +6,33 @@ Mini-projet d'application
 
 __POUR LA PARTIE FRONTEND :__
 
-Fichiers/dossiers nécessaires :  
+Dossier nécessaire :  
 -> devrep_banque
 
-Avoir au préalable :  
--> Node.js d’installé pour avoir la commande npm  (https://nodejs.org/en/download/)  
+Avoir sur la machine :  
+-> Nodejs installé pour avoir la commande `npm`  
 -> commande `create-react-app` avec `npm install -g create-react-app`  
 
 Créer un projet react  
-    `create-react-app devrep_app`  
+- `create-react-app devrep_app`  
 
 Se placer dans le dossier créé  
-    `cd devrep_app`
+- `cd devrep_app`
 
 Recupérer les fichiers depuis Github  
-    - Remplacer à l'identique les fichiers/dossiers du projet devrep_app crée juste avant
-      par ceux dans le dossier devrep_banque sur Github
+- Remplacer les fichiers/dossiers du projet devrep_app créé juste avant par ceux dans le dossier devrep_banque. Garder le dossier node_modules. 
 
 On peut maintenant démarrer, après les commandes l'application doit s'ouvrir dans un navigateur à l'adresse localhost:3000  
-    `cd devrep_app`  
-    `npm start`  
+- `cd devrep_app`  
+- `npm start`  
 
 Il doit normalement manquer des dépendances, il faut donc les installer  
-    `cd devrep_app`  
-    `npm i --save @fortawesome/free-brands-svg-icons`
+- `cd devrep_app`  
+- `npm i --save @fortawesome/free-brands-svg-icons`
 
-Recharger la page, le front en react devrait être fonctionnel 
+Recharger la page, le front en react devrait être fonctionnel. 
 
-===========================================================
+---
 
 __POUR LA PARTIE BASE DE DONNEES :__
 
@@ -41,44 +40,45 @@ _DEUX METHODES POSSIBLES, lire les deux avant d'en appliquer une_
 
 __METHODE 1 : Avec Docker__
 
-Fichiers/dossiers nécessaires :  
+Fichiers nécessaires :  
 -> docker-compose.yml  
 -> Compte.sql  
 
-Avoir au préalable :  
+Avoir sur la machine :  
 -> Docker installé et __démarré__  
+-> commande `docker-compose`
 
 Récupérer le dossier docker_db   
-    `cd docker_db`  
-    `docker-compose up` 
+- `cd docker_db`  
+- `docker-compose up` 
 
-PhpMyAdmin sera maintenant accessible à l'adresse localhost:3312  
-    utilisateur  : root  
-    mot de passe : root  
+PhpMyAdmin sera maintenant accessible à l'adresse __localhost:3312__  
+- utilisateur  : root  
+- mot de passe : root  
 
 Créer ensuite une base de données  
-    - Nouvelle base de données  
-    - Nom : devrep_banque  
-    - Créer  
+- Nouvelle base de données  
+- Nom : devrep_banque  
+- Créer  
 
 Cliquer sur Importer  
-    - Choisir le fichier Compte.sql  
-    - Exécuter  
+- Choisir le fichier Compte.sql  
+- Exécuter  
 
-Maintenant la base de données est prête pour l'application  
+La base de données est prête pour l'application.  
 
 __METHODE 2 : MySQL et MySQL Workbench__
 
-Fichiers/dossiers nécessaires :  
+Fichier nécessaire :  
     -> Compte.sql  
 
-Avoir au préalable :  
+Avoir sur la machine :  
     -> MySQL  
     -> MySQL Workbench  
 
 Importer Compte.sql dans une base de données nommée devrep_banque
 
-===========================================================
+---
 
 __POUR LA PARTIE BACKEND :__  
 
@@ -86,20 +86,20 @@ __POUR LA PARTIE BACKEND :__
 _Optionnel : des modifications devront probablement être apportées dans le fichier "db.properties" selon la configuration de votre sgbd_  
 
 
-Fichiers/dossiers nécessaires :  
--> devrep_banque_backend  
+Dossier nécessaire :  
+-> devrep_banque_backend (projet Maven)  
 
-Avoir au préalable :  
+Avoir sur la machine :  
 -> Eclipse JEE 2020-03  
 -> Tomcat 9.x 
 
-Récupérer le projet devrep_banque_backend et l'ouvrir dans Eclipse
+- Récupérer le projet __devrep_banque_backend__ et l'ouvrir dans Eclipse
+- Placer le projet dans le serveur web Tomcat intégré à Eclipse
+- Démarrer le serveur web Tomcat  
 
-Placer le projet dans le serveur web Tomcat intégré à Eclipse
+Le projet entier devrait maintenant fonctionner.  
 
-Démarrer le serveur web Tomcat
-
-Le projet entier devrait maintenant fonctionner  
+Les __logs des événements__ seront visibles dans la console d'Eclipse. 
 
 # UTILISATION  
 
@@ -117,7 +117,7 @@ Avant de commencer, plusieurs choses à savoir :
 
 ![alt text](https://github.com/itsmaxime/DEVREP_Banque/blob/main/images/connexion.png)
 
-Nous avons ici la page de connexion, la première connexion se fera avec le compte administrateur "devrepadm@gmail.com" afin de fixer le montant de découvert autorisé et créer les deux comptes clients pour la suite.  
+Nous avons ici la page de connexion, la première connexion se fera avec le compte administrateur "devrepadm@gmail.com" afin de fixer le montant de découvert autorisé et créer des comptes.  
 
 ## Page administrateur  
 
@@ -127,9 +127,9 @@ Le compte administrateur peut gérer tout le système.
 
 Il peut fixer le montant de découvert et créer les comptes clients.  
 
-Fixons le découvert à -500 ici.  
+Pour l'exemple, fixer le découvert à -500.  
 
-Essayez de créer deux comptes que les clients vont pouvoir utiliser:
+Créer deux comptes que les clients vont pouvoir utiliser:
 - numéro de compte : 11223344, email : devrepclient@gmail.com  
 - numéro de compte : 55667788, email : devrepclient2@gmail.com  
 
@@ -141,14 +141,15 @@ Maintenant que l'administrateur a créé les deux comptes, les clients peuvent s
 
 Sur la page de connexion, se connecter avec l'un des deux comptes Google pour arriver sur la page cliente ci-dessus.  
 
-On peut voir à gauche le numéro de compte du client ainsi que le solde sur le compte. Les deux boutons "Withdraw" et "Deposit" permettent respectivement de retirer et déposer 200 sur le compte.  
+On peut voir à gauche le numéro de compte du client ainsi que le solde sur le compte. Les deux boutons `Withdraw`  et  `Deposit` permettent respectivement de retirer et déposer 200 sur le compte.  
 
-Au milieu le client peut réaliser le transfert d'un certains montant sur un autre compte.  
+Au milieu le client peut réaliser le __transfert__ d'un certain montant sur un autre compte.  
 
 Pour l'exemple, faire des dépots jusqu'à ce que le solde du compte passe à 2000, puis réaliser un transfert de 1000 sur le compte 55667788. Le solde du compte va descendre à 1000 et le solde du compte 55667788 passera à 1000 (qui peut être vérifié en se connectant avec l'autre compte Google).  
 
 Enfin à droite le client dispose d'un outil de conversion de devise.  
 
+Une opération de retrait est rejetée lorsque le découvert maximum autorisé est atteint. Signalée par une alerte.
 
 # OBJECTIFS
 
