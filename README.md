@@ -22,7 +22,7 @@ Se placer dans le dossier créé
 Recupérer les fichiers depuis Github  
 - Remplacer les fichiers/dossiers du projet devrep_app créé juste avant par ceux dans le dossier devrep_banque. Garder le dossier node_modules. 
 
-On peut maintenant démarrer, après les commandes l'application doit s'ouvrir dans un navigateur à l'adresse localhost:3000  
+On peut maintenant démarrer, après les commandes l'application doit s'ouvrir dans un navigateur à l'adresse __localhost:3000__  
 - `cd devrep_app`  
 - `npm start`  
 
