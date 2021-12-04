@@ -121,7 +121,7 @@ Nous avons ici la page de connexion, la première connexion se fera avec le comp
 
 ## Page administrateur  
 
-![alt text](https://github.com/itsmaxime/DEVREP_Banque/blob/main/images/administrateur.png)
+![alt text](https://github.com/itsmaxime/DEVREP_Banque/blob/main/images/admin.png)
 
 Le compte administrateur peut gérer tout le système.  
 
@@ -150,6 +150,8 @@ Pour l'exemple, faire des dépots jusqu'à ce que le solde du compte passe à 20
 Enfin à droite le client dispose d'un outil de conversion de devise.  
 
 Une opération de retrait est rejetée lorsque le découvert maximum autorisé est atteint. Signalée par une alerte.
+
+![alt text](https://github.com/itsmaxime/DEVREP_Banque/blob/main/images/decouvert.png)
 
 # OBJECTIFS
 
