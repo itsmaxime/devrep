@@ -125,7 +125,7 @@ Nous avons ici la page de connexion, la première connexion se fera avec le comp
 
 Le compte administrateur peut gérer tout le système.  
 
-Il peut fixer le montant de découvert et créer les comptes clients.  
+Il peut fixer le montant de découvert, créer et fermer les comptes clients.  
 
 Pour l'exemple, fixer le découvert à -500.  
 
